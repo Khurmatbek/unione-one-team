@@ -1,30 +1,70 @@
-
-box-sizing{
+* {
     box-sizing: border-box;
-    display: flex;
 }
-body{
+body {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: sans-serif;
 }
 .sidebar-box {
     display: flex;
-
-}
-.card {
     width: 586px;
     height: 160px;
-    top: 582px;
-    left: 694px;
-    background-color: #ffff;
-    
+    overflow: hidden;
+    border: 1px solid #D0D0D0;
+}
+.card {
+    width: 266px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    flex-shrink: 0; /* Siqilib ketishining oldini oladi */
 }
 .card-active {
     width: 320px;
-    height: 160px;
-    top: 582px;
-    left: 960px;
+    height: 100%;
     background-color: #156963;
-
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+.card span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #888888;
+}
+.card span::before {
+    content: "← ";
+}
+.card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #156963;
+    margin: 0;
+}
+.card-active span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #9ec3bd;
+}
+.card-active span::after {
+    content: " →";
+}
+.card-active h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
 }
