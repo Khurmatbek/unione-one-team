@@ -5,16 +5,16 @@
 }
 
 body {
-    background-color: #ffffff; /* Ortiqcha kulrang ramka yo'q, toza oq sahifa */
+    background-color: #ffffff; 
     font-family: sans-serif;
     padding: 40px 20px;
 }
 
-/* Figma'dagi Desktop o'lchamiga moslashtirilgan va cho'zilmaydigan quti */
+
 .figma-container {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto; /* Sahifaning o'rtasida turadi */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
