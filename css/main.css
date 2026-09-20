@@ -167,6 +167,7 @@ body {
   .right:hover img {
     transform: scale(1.02);
   }
+
   display: flex;
   gap: 40px;
   align-items: center;
@@ -237,10 +238,12 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
 .hero-content {
   max-width: 523px;
   width: 100%;
 }
+
 .hero-content h1 {
   font-family: "Montserrat";
   font-weight: 500;
@@ -255,6 +258,7 @@ body {
   color: #666;
   line-height: 1.5;
 }
+
 .sidebar-box {
   display: flex;
   align-items: center;
@@ -339,8 +343,8 @@ body {
   font-weight: 700;
   color: #156963;
 }
-j
-.feature-card p {
+
+j .feature-card p {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
@@ -453,6 +457,7 @@ select {
   margin-top: 7px;
   color: #222;
 }
+
 .about {
   padding-top: 80px;
 }
@@ -506,4 +511,88 @@ select {
 
 .right:hover img {
   transform: scale(1.02);
+}
+
+
+
+/* Abdulaziz */
+
+.my-container {
+  width: 1, 168px;
+  height: 360px;
+  top: 2239px;
+  left: 56px;
+  margin: 0 56px 0 56px;
+  background-color: #F3F4F6;
+}
+
+
+.my-text {
+  width: 583px;
+  height: 184px;
+  padding: 150px 0px 88px 97px;
+}
+
+
+.my-img {
+  width: 480px;
+  height: 360px;
+  float: inline-end;
+}
+
+
+.my-btn {
+  height: 40px;
+  width: 152px;
+  size: 14px;
+  top: 2327px;
+  left: 153px;
+  gap: 33px;
+  margin: 0 0 0 101px;
+  border: 1px;
+  background-color: #156963;
+  cursor: pointer;
+}
+
+
+.my-color{
+  color: #156963;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.logo {
+  color: #0d5c4d;
+  margin-bottom: 10px;
+}
+
+.col h4 {
+  margin-bottom: 15px;
+}
+
+.col p {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form button {
+  background-color: #0d5c4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
 }
