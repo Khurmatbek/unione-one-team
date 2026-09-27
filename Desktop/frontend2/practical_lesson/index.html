@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Board</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="conatiner">
+        <div class="wrapper">
+            <div class="logo">
+                <h1 class="logo-title">Flashcard Board</h1>
+                <p class="logo-description">Write a task, add it as a card, then drag it between zones</p>
+            </div>
+
+            <div class="input-group">
+                <input type="text" class="task-input" placeholder="e.g. Washing the dishes">
+               <select class="color-select">
+                    <option value="card-red">Red</option>
+                    <option value="card-blue">Blue</option>
+                    <option value="card-green">Green</option>
+                    <option value="card-orange">Orange</option>
+                    <option value="card-pink">Pink</option>
+                    <option value="card-black">Black</option>
+                    <option value="card-yellow">Yellow</option>
+                    <option value="card-brown">Brown</option>
+                    <option value="card-grey">Grey</option>
+                </select>
+                <input type="date" class="date-input">
+                
+                <button class="add-btn">Add card</button>
+            </div>
+        </div>
+
+        <div class="completes wrapper">
+            <div class="completes-text">1 of 3 tasks accomplished (33%)</div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 33%;"></div>
+            </div>
+        </div>
+
+        <div class="board-columns">
+            <div class="column" data-column="todo">
+                <div class="column-header">
+                    <h3 class="column-title">To do</h3>
+                    <span class="task-count">1</span>
+                </div>
+                <div class="card-list">
+                    <div class="card card-red" draggable="true">Daraxt ekish</div>
+                </div>
+            </div>
+
+            <div class="column" data-column="important">
+                <div class="column-header">
+                    <h3 class="column-title">Important</h3>
+                    <span class="task-count">1</span>
+                </div>
+                <div class="card-list">
+                    <div class="card card-red" draggable="true">kitob o'qish</div>
+                </div>
+            </div>
+
+            <div class="column" data-column="accomplished">
+                <div class="column-header">
+                    <h3 class="column-title">Accomplished</h3>
+                    <span class="task-count">1</span>
+                </div>
+                <div class="card-list">
+                    <div class="card card-red accomplished-card" draggable="true">Mashq qilish</div>
+                </div>
+            </div>
+
+            <div class="column column-trash" data-column="trash">
+                <div class="column-header">
+                    <h3 class="column-title">Trash</h3>
+                </div>
+                <div class="card-list trash-content">
+                    <div class="trash-icon">🗑️</div>
+                    <div class="trash-text">Deleted: 0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
